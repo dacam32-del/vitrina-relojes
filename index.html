@@ -1,0 +1,122 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vitrina de Relojes · Colección de pulsera</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0c12;--paper:#141824;--ink:#f4f1ea;--gold:#d4b46a;--gold2:#f0d090;--navy:#1c2a4a;--mut:#b7b3a8;--wa:#25d366}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:Lora,Georgia,serif;background:var(--bg) repeating-radial-gradient(circle at 100% 0,transparent 0 22px,rgba(212,180,106,.08) 22px 26px,transparent 26px 48px,rgba(28,42,74,.35) 48px 52px) fixed}
+header{position:relative;overflow:hidden;background:radial-gradient(circle at 50% 0,#243056 0,transparent 55%),#0a0c12;padding:38px 20px 26px;text-align:center;border-bottom:4px solid var(--gold)}
+header:after{content:"";position:absolute;inset:auto 0 -8px;height:4px;background:#8a7340}
+.clock{width:90px;height:90px;margin:0 auto 12px;border-radius:50%;background:radial-gradient(circle,#0a0c12 0 38%,transparent 38%),conic-gradient(from 0deg,#d4b46a 0 2deg,#141824 2deg 28deg,#d4b46a 28deg 30deg,#141824 30deg 58deg,#d4b46a 58deg 60deg,#141824 60deg 88deg,#d4b46a 88deg 90deg,#141824 90deg 118deg,#d4b46a 118deg 120deg,#141824 120deg 148deg,#d4b46a 148deg 150deg,#141824 150deg 178deg,#d4b46a 178deg 180deg,#141824 180deg 208deg,#d4b46a 208deg 210deg,#141824 210deg 238deg,#d4b46a 238deg 240deg,#141824 240deg 268deg,#d4b46a 268deg 270deg,#141824 270deg 298deg,#d4b46a 298deg 300deg,#141824 300deg 328deg,#d4b46a 328deg 330deg,#141824 330deg 358deg,#d4b46a 358deg 360deg);box-shadow:0 0 0 4px #8a7340,0 0 0 8px var(--gold),0 0 24px rgba(212,180,106,.45);position:relative}
+.clock:before,.clock:after{content:"";position:absolute;left:50%;top:50%;background:var(--gold);transform-origin:50% 100%;border-radius:2px}
+.clock:before{width:4px;height:26px;margin:-26px 0 0 -2px;transform:rotate(90deg)}
+.clock:after{width:3px;height:18px;margin:-18px 0 0 -1.5px;transform:rotate(180deg)}
+h1{font-family:'Playfair Display',serif;font-size:2.6em;margin:0;letter-spacing:.5px;color:#fff;text-shadow:3px 3px 0 #1c2a4a,-1px -1px 0 var(--gold)}header p{margin:6px 0 0;font-style:italic;color:#d8dbe6}
+.wa{display:inline-flex;gap:6px;align-items:center;margin-top:14px;background:var(--wa);color:#fff;text-decoration:none;padding:8px 16px;border-radius:22px;font-weight:600;font-family:'Playfair Display',serif}
+.wa:hover{filter:brightness(1.08)}
+.stats{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:20px}.stat{border:2px solid var(--gold);padding:10px 18px;border-radius:6px;background:rgba(10,12,18,.85)}
+.stat b{display:block;font-family:'Playfair Display';font-size:1.4em;color:var(--gold2)}.stat span{font-size:.8em;text-transform:uppercase;letter-spacing:1px;color:#fff}
+.filters{max-width:1200px;margin:20px auto;padding:16px;background:var(--paper);border:1px solid #8a7340;border-top:3px solid var(--gold);border-radius:6px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.filters label{font-size:.75em;text-transform:uppercase;letter-spacing:1px;color:var(--gold);font-weight:600}
+select,input{width:100%;padding:7px;border:1px solid #8a7340;background:#0a0c12;font-family:Lora;border-radius:3px;color:#fff}select:focus,input:focus{outline:2px solid var(--gold)}
+#count{max-width:1200px;margin:0 auto;padding:0 16px;color:var(--mut);font-style:italic}
+.grid{max-width:1200px;margin:10px auto 40px;padding:0 16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:22px}
+.card{background:var(--paper);border-radius:8px;box-shadow:0 0 0 2px #8a7340,0 8px 20px rgba(0,0,0,.6);border-top:6px solid var(--gold);cursor:pointer;overflow:hidden;transition:transform .15s,box-shadow .15s;position:relative}
+.card:hover{transform:translateY(-4px);box-shadow:0 0 0 2px var(--gold2),0 0 22px rgba(212,180,106,.45)}.card img{width:100%;aspect-ratio:3/4;object-fit:cover;background:#111;display:block;object-position:center}
+.noimg{aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;background:#111;color:var(--gold);font-family:'Playfair Display';font-size:3em}
+.cb{padding:12px}.cb .t{font-family:'Playfair Display';font-weight:800;font-size:1.05em;line-height:1.2;color:#fff}.cb .a{color:var(--mut);font-size:.85em;font-style:italic;margin:3px 0 8px}
+.tag{display:inline-block;font-size:.7em;padding:2px 7px;border-radius:10px;background:var(--navy);color:var(--gold2);font-weight:600;margin:0 3px 3px 0;border:1px solid #8a7340}.tag.r{background:linear-gradient(135deg,#e6d5a8,#d4b46a 40%,#8a7340);color:#0a0c12;border:0}
+.price{margin-top:8px;color:var(--gold);font-weight:600}.sug{font-size:.85em;color:var(--gold2)}.empty{grid-column:1/-1;text-align:center;padding:70px 20px;font-family:'Playfair Display';font-size:1.6em;color:var(--gold)}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;padding:16px;z-index:9}.modal.on{display:flex}
+.box{background:var(--paper);max-width:900px;width:100%;max-height:92vh;overflow:auto;border-radius:6px;border-top:8px solid var(--gold);box-shadow:0 0 0 2px #d4b46a;padding:22px;position:relative}
+.box h2{font-family:'Playfair Display';margin:0 0 4px;color:var(--gold)}.x{position:absolute;right:14px;top:8px;font-size:1.8em;cursor:pointer;color:var(--gold2)}
+.ph{display:flex;gap:8px;overflow-x:auto;margin:12px 0}.ph img{height:280px;border-radius:4px;border:2px solid #8a7340}
+table{width:100%;border-collapse:collapse;font-size:.92em}td{padding:6px;border-bottom:1px dotted #555;vertical-align:top}td:first-child{color:var(--gold);font-weight:600;width:38%}
+.refs{margin:14px 0 0;padding:0;list-style:none}.refs li{margin:0 0 10px;padding:8px 10px;border:1px solid #8a7340;border-radius:6px;background:#0a0c12;font-size:.9em}
+.refs a{color:var(--gold2)}.wa-item{display:inline-flex;margin-top:14px;background:var(--wa);color:#fff;text-decoration:none;padding:8px 16px;border-radius:22px;font-weight:600}
+footer{text-align:center;padding:20px;color:var(--mut);font-size:.85em;border-top:3px solid;border-image:linear-gradient(90deg,var(--gold),#8a7340,var(--navy)) 1}
+</style></head><body>
+<header><div class="clock" aria-hidden="true"></div><h1>Vitrina de Relojes</h1><p>Relojes de pulsera vintage y de colección · valores estimados en Chile e internacionales</p>
+<a class="wa" href="https://wa.me/56956592453?text=Hola!%20Vi%20tu%20vitrina%20de%20relojes%20y%20quiero%20consultar" target="_blank" rel="noopener">💬 Consultar por WhatsApp</a>
+<div class="stats"><div class="stat"><b id="s1">0</b><span>Fichas</span></div><div class="stat"><b id="s2">0</b><span>Unidades</span></div><div class="stat"><b id="s3">$0</b><span>Valor total Chile (CLP)</span></div></div></header>
+<div class="filters">
+<div><label>Buscar</label><input id="q" placeholder="Modelo, marca, UPC, línea…"></div>
+<div><label>Tipo</label><select id="f_tipo"></select></div>
+<div><label>Marca</label><select id="f_marca"></select></div>
+<div><label>Línea</label><select id="f_linea"></select></div>
+<div><label>Época</label><select id="f_ep"></select></div>
+<div><label>Estado</label><select id="f_estado"></select></div>
+<div><label>Rareza</label><select id="f_rareza"></select></div>
+<div><label>Precio mín. (CLP)</label><input id="pmin" type="number" min="0"></div>
+<div><label>Precio máx. (CLP)</label><input id="pmax" type="number" min="0"></div>
+<div><label>Ordenar</label><select id="ord"><option value="d">Más caros primero</option><option value="a">Más baratos primero</option><option value="yo">Más antiguos</option><option value="yn">Más recientes</option><option value="t">Título A–Z</option></select></div>
+</div><div id="count"></div><div class="grid" id="g"></div>
+<div class="modal" id="m"><div class="box" id="mb"></div></div>
+<footer>Valores referenciales: Chile (MercadoLibre, Yapo, tiendas) e internacional (eBay). Se distingue siempre precio vendido, anunciado y estimación. Dólar según cada ficha.</footer>
+<script>
+let D=[];const WA="https://wa.me/56956592453?text=";const $=i=>document.getElementById(i);const e=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const est=p=>{const s=p.estado;return typeof s==='object'&&s?(s.escala||''):String(s||'').split(/[(·,-]/)[0].trim()};
+const F={f_tipo:p=>p.tipo,f_marca:p=>p.marca,f_linea:p=>p.linea,f_ep:p=>p.ep||p.epoca,f_estado:est,f_rareza:p=>p.rareza};
+['q','pmin','pmax','ord'].forEach(i=>$(i).oninput=r);
+const fm=n=>'$'+Number(n).toLocaleString('es-CL');
+const estTxt=p=>{const s=p.estado;return typeof s==='object'&&s?`${s.escala||''}${s.nota?' · '+s.nota+'/10':''}${s.detalle?' — '+s.detalle:''}`:(s||'')};
+function r(){const q=$('q').value.toLowerCase(),a=+$('pmin').value||0,b=+$('pmax').value||1e15;
+let L=D.filter(p=>Object.entries(F).every(([id,fn])=>!$(id).value||fn(p)==$(id).value)&&p.pmax>=a&&p.pmin<=b&&(!q||JSON.stringify(p).toLowerCase().includes(q)));
+const o=$('ord').value;L.sort((x,y)=>o=='a'?x.pmin-y.pmin:o=='yo'?(x.y||9999)-(y.y||9999):o=='yn'?y.y-x.y:o=='t'?String(x.titulo).localeCompare(y.titulo):y.pmax-x.pmax||y.pmin-x.pmin);
+$('count').textContent=D.length?`${L.length} de ${D.length} piezas`:'';
+$('g').innerHTML=!D.length?'<div class="empty">⌚ Pronto: primeras piezas de la colección</div>':!L.length?'<div class="empty">Sin resultados para estos filtros</div>':L.map(p=>`<div class="card" data-id="${e(p.id)}" onclick="sh('${p.id}')">${p.imgs&&p.imgs.length?`<img loading="lazy" src="${e(p.imgs[0])}" alt="${e(p.titulo)}">`:`<div class="noimg">⌚</div>`}<div class="cb"><div class="t">${e(p.titulo)}</div><div class="a">${e(p.marca)}${p.anio?' · '+e(p.anio):''}${p.stock>1?' · '+p.stock+' unidades':''}</div><span class="tag">${e(p.tipo)}</span>${est(p)?`<span class="tag">${e(est(p))}</span>`:''}${p.rareza?`<span class="tag r">${e(p.rareza)}</span>`:''}<div class="price">${p.precio_sugerido_clp?e(p.precio_sugerido_clp)+' CLP':e(p.venta_chile_clp)+' CLP'}</div>${p.precio_sugerido_clp&&p.venta_chile_clp?`<div class="sug">Rango ${e(p.venta_chile_clp)}</div>`:''}</div></div>`).join('')}
+}
+const LB={id:'Código',tipo:'Tipo',titulo:'Título',marca:'Marca',linea:'Línea',modelo:'Modelo',upc:'UPC',movimiento:'Movimiento',display:'Display',correa:'Correa',empaque:'Empaque',edicion:'Edición / licencia',anio:'Año',epoca:'Época',pais:'País',fabricacion:'Fabricación',genero:'Uso',estado:'Estado',rareza:'Rareza',valor_internacional_usd:'Valor internacional (USD)',valor_internacional_clp:'Valor internacional (CLP)',venta_chile_clp:'Rango de venta en Chile (CLP)',precio_sugerido_clp:'Precio sugerido por unidad (CLP)',stock:'Unidades',origen_estimacion:'Origen de la tasación',descripcion:'Descripción',notas:'Notas de tasación',dolar:'Dólar usado',fecha:'Fecha de registro'};
+function refsHtml(p){const R=p.referencias||[];if(!R.length)return'';return `<h3 style="font-family:'Playfair Display';color:var(--gold);margin:16px 0 8px">Referencias</h3><ul class="refs">${R.map(x=>`<li><b>${e(x.tipo)}</b> · ${e(x.fuente)}${x.precio_usd?' · US$'+e(x.precio_usd):''}${x.precio_clp?' · $'+e(String(x.precio_clp).replace(/^\$/,''))+' CLP':''}${x.url?`<br><a href="${e(x.url)}" target="_blank" rel="noopener">${e(x.url)}</a>`:''}${x.nota?`<br><span style="opacity:.85">${e(x.nota)}</span>`:''}</li>`).join('')}</ul>`}
+function sh(id){const p=D.find(x=>x.id==id);const msg=encodeURIComponent(`Hola! Vi tu vitrina de relojes y quiero consultar por el ${p.titulo} ${p.modelo||''} (${p.id}), stock ${p.stock}.`);$('mb').innerHTML=`<span class="x" onclick="$('m').classList.remove('on')">×</span><h2>${e(p.titulo)}</h2><i>${e(p.marca)}${p.modelo?' · '+e(p.modelo):''}</i><div class="ph">${(p.imgs||[]).map(i=>`<a href="${e(i)}" target="_blank"><img src="${e(i)}" alt=""></a>`).join('')}</div><table>${Object.entries(LB).filter(([k])=>p[k]!=null&&p[k]!=='').map(([k,l])=>`<tr><td>${l}</td><td>${e(k=='estado'?estTxt(p):p[k])}</td></tr>`).join('')}</table>${refsHtml(p)}<a class="wa-item" href="${WA+msg}" target="_blank" rel="noopener">💬 Consultar esta pieza por WhatsApp</a>`;$('m').classList.add('on')}
+$('m').onclick=ev=>{if(ev.target.id=='m')$('m').classList.remove('on')};document.onkeydown=ev=>{if(ev.key=='Escape')$('m').classList.remove('on')};
+fetch('data.json?'+Date.now()).then(x=>x.json()).then(d=>{D=d;for(const[id,fn]of Object.entries(F)){const v=[...new Set(D.map(fn).filter(Boolean))].sort();$(id).innerHTML='<option value="">Todos</option>'+v.map(x=>`<option>${e(x)}</option>`).join('');$(id).onchange=r}$('s1').textContent=D.length;$('s2').textContent=D.reduce((t,p)=>t+(+p.stock||1),0);$('s3').textContent=fm(D.reduce((t,p)=>t+p.pmin*(+p.stock||1),0))+' – '+fm(D.reduce((t,p)=>t+p.pmax*(+p.stock||1),0));r()});
+</script>
+<!-- musica-vitrina --><div id="musica-credito" style="text-align:center;font-size:11px;opacity:.6;padding:8px 8px 70px">Música: "Lobby Time" de Kevin MacLeod (<a href="https://incompetech.com" style="color:inherit">incompetech.com</a>), licencia <a href="https://creativecommons.org/licenses/by/4.0/" style="color:inherit">CC BY 4.0</a></div>
+<audio id="bgm" src="audio/musica.mp3" loop preload="auto"></audio>
+<button id="bgm-btn" aria-label="Música" title="Música" style="position:fixed;left:16px;bottom:16px;z-index:9999;width:44px;height:44px;border-radius:50%;border:2px solid #d4b46a;background:#141824;color:#d4b46a;font-size:20px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.4);opacity:.9">🔇</button>
+<script>(function(){var a=document.getElementById('bgm'),b=document.getElementById('bgm-btn'),K='vitrina_musica_pausada';a.volume=0.35;
+function ui(){b.textContent=a.paused?'🔇':'🔊';}
+function go(){return a.play().then(ui).catch(function(){ui();});}
+function first(e){if(e&&e.target===b)return;rm();if(localStorage.getItem(K)!=='1'&&a.paused)go();}
+function rm(){['click','touchstart','keydown'].forEach(function(t){document.removeEventListener(t,first,true);});}
+b.addEventListener('click',function(){rm();if(a.paused){localStorage.removeItem(K);go();}else{a.pause();localStorage.setItem(K,'1');ui();}});
+a.addEventListener('play',ui);a.addEventListener('pause',ui);
+if(localStorage.getItem(K)!=='1'){a.play().then(ui).catch(function(){['click','touchstart','keydown'].forEach(function(t){document.addEventListener(t,first,true);});});}
+})();</script>
+<!-- /musica-vitrina -->
+<!-- calculadora-vitrina -->
+<style>#cv-btn{position:fixed;right:16px;bottom:88px;z-index:9998;width:52px;height:52px;border-radius:50%;border:2px solid #d4b46a;background:#141824;color:#d4b46a;font-size:24px;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.45)}
+#cv-btn b{position:absolute;top:-6px;right:-6px;background:#e11;color:#fff;font:700 12px/20px sans-serif;min-width:20px;height:20px;border-radius:10px;padding:0 4px}
+#cv-btn.cv-f{animation:cvf .4s}@keyframes cvf{50%{transform:scale(1.25)}}
+#cv-pan{position:fixed;right:16px;bottom:150px;z-index:10000;width:min(360px,calc(100vw - 32px));max-height:65vh;overflow:auto;background:#141824;color:#d4b46a;border:2px solid #d4b46a;border-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,.55);font:14px/1.35 system-ui,sans-serif;display:none;padding:10px}
+#cv-pan.cv-o{display:block}#cv-pan .cv-h{font-weight:700;font-size:16px;display:flex;justify-content:space-between;margin-bottom:6px}
+#cv-pan [data-a]{cursor:pointer;user-select:none}#cv-pan .cv-r{border-top:1px solid rgba(128,128,128,.35);padding:6px 0}
+#cv-pan .cv-n{font-weight:600;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+#cv-pan .cv-c{display:flex;align-items:center;gap:6px;margin-top:3px;flex-wrap:wrap}#cv-pan .cv-c span[data-a]{display:inline-block;min-width:22px;text-align:center;border:1px solid #d4b46a;border-radius:6px}
+#cv-pan input{width:90px;background:transparent;color:inherit;border:1px solid rgba(128,128,128,.6);border-radius:6px;padding:2px 4px}#cv-pan small{opacity:.7}
+#cv-pan .cv-s{text-align:right;font-weight:600}#cv-pan .cv-t{display:flex;justify-content:space-between;border-top:2px solid #d4b46a;margin-top:6px;padding-top:6px;font-size:16px}
+#cv-pan .cv-v{margin-top:8px;text-align:center;border:1px solid #d4b46a;border-radius:8px;padding:4px}#cv-pan .cv-e,#cv-pan .cv-note{opacity:.75;font-size:12px;margin-top:6px}
+.cv-add{position:absolute;right:6px;bottom:6px;z-index:5;background:#141824;color:#d4b46a;border:1px solid #d4b46a;border-radius:14px;padding:3px 9px;font:600 12px/1.3 system-ui,sans-serif;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.35)}.cv-add:hover{filter:brightness(1.2)}</style>
+<script>(function(){var C={"card": "div.card", "name": ".t", "price": ".price", "key": "relojes"},K='calc_vitrina_'+C.key,S=[];try{S=JSON.parse(localStorage.getItem(K))||[]}catch(e){}
+function save(){localStorage.setItem(K,JSON.stringify(S))}
+function fmt(n){return '$'+Math.round(n).toLocaleString('es-CL')}
+function parse(t){t=t||'';var i=t.lastIndexOf('Chile');if(i>=0)t=t.slice(i);var m=t.match(/\d[\d.]*(?:,\d+)?/g)||[];var v=m.map(function(x){return parseInt(x.replace(/,\d+$/,'').replace(/\./g,''),10)}).filter(function(x){return !isNaN(x)}).slice(0,2);
+ if(!v.length)return{p:0,r:false};if(v.length==2&&v[1]>v[0])return{p:Math.round((v[0]+v[1])/2),r:true};return{p:v[0],r:false}}
+function nm(c){if(C.name[0]=='@')return c.getAttribute(C.name.slice(1))||'';var e=c.querySelector(C.name);return e?e.textContent.trim():''}
+function deco(){document.querySelectorAll(C.card).forEach(function(c){if(c.querySelector('.cv-add'))return;if(getComputedStyle(c).position=='static')c.style.position='relative';var b=document.createElement('span');b.className='cv-add';b.setAttribute('role','button');b.tabIndex=0;b.textContent='➕ Agregar';c.appendChild(b)})}
+function add(c){var n=nm(c),pe=c.querySelector(C.price),pr=parse(pe?pe.textContent:'');var id=c.getAttribute('data-id')||n;var it=S.find(function(x){return x.id==id});if(it)it.q++;else S.push({id:id,n:n,p:pr.p,r:pr.r,q:1});save();draw();flash()}
+var btn=document.createElement('button'),pan=document.createElement('div');btn.id='cv-btn';btn.title='Calculadora';pan.id='cv-pan';
+function flash(){btn.classList.remove('cv-f');void btn.offsetWidth;btn.classList.add('cv-f')}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function draw(){var q=0,t=0;S.forEach(function(x){q+=x.q;t+=x.q*x.p});btn.innerHTML='🧮'+(q?'<b>'+q+'</b>':'');
+ pan.innerHTML='<div class="cv-h">🧮 Mi cuenta<span class="cv-x" data-a="close">✕</span></div>'+(S.length?'<div class="cv-l">'+S.map(function(x,i){return '<div class="cv-r"><div class="cv-n">'+esc(x.n)+'</div><div class="cv-c">$<input type="number" min="0" step="100" value="'+x.p+'" data-i="'+i+'" class="cv-p">'+(x.r?'<small title="Punto medio del rango de precio">≈ medio</small>':'')+' <span data-a="m" data-i="'+i+'">−</span><b>'+x.q+'</b><span data-a="p" data-i="'+i+'">+</span><span data-a="d" data-i="'+i+'" title="Quitar">🗑</span></div><div class="cv-s">'+fmt(x.p*x.q)+'</div></div>'}).join('')+'</div>':'<div class="cv-e">Toca “➕ Agregar” en una ficha para sumarla.</div>')+
+ '<div class="cv-t"><span>'+q+' ítem'+(q==1?'':'s')+'</span><b>'+fmt(t)+' CLP</b></div>'+(S.length?'<div class="cv-v" data-a="clr">Vaciar</div>':'')+'<div class="cv-note">Precios de referencia; “≈ medio” = punto medio del rango.</div>'}
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.cv-add');if(a){e.preventDefault();e.stopPropagation();add(a.closest(C.card))}},true);
+document.addEventListener('keydown',function(e){var a=e.target.closest&&e.target.closest('.cv-add');if(a&&(e.key=='Enter'||e.key==' ')){e.preventDefault();e.stopPropagation();add(a.closest(C.card))}},true);
+pan.addEventListener('click',function(e){var a=e.target.getAttribute('data-a'),i=+e.target.getAttribute('data-i');if(!a)return;if(a=='close')pan.classList.remove('cv-o');if(a=='p')S[i].q++;if(a=='m'){S[i].q--;if(S[i].q<1)S.splice(i,1)}if(a=='d')S.splice(i,1);if(a=='clr'&&confirm('¿Vaciar la cuenta?'))S=[];save();draw()});
+pan.addEventListener('change',function(e){if(e.target.classList.contains('cv-p')){S[+e.target.dataset.i].p=Math.max(0,+e.target.value||0);S[+e.target.dataset.i].r=false;save();draw()}});
+btn.addEventListener('click',function(){pan.classList.toggle('cv-o')});
+function init(){document.body.appendChild(btn);document.body.appendChild(pan);draw();deco();new MutationObserver(function(){clearTimeout(init.t);init.t=setTimeout(deco,60)}).observe(document.body,{childList:true,subtree:true})}
+if(document.body)init();else document.addEventListener('DOMContentLoaded',init)})();</script>
+<!-- /calculadora-vitrina -->
+</body></html>

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "REL-001",
+    "tipo": "Reloj digital de pulsera",
+    "titulo": "Mickey Sport Watch",
+    "marca": "Innovative Time Corporation",
+    "linea": "Mickey's Stuff (Disney)",
+    "modelo": "DISLC09",
+    "upc": "0 23133 04518 2",
+    "movimiento": "Quartz (super quartz accuracy)",
+    "display": "LCD digital: hora y calendario",
+    "correa": "Negra de plástico/resina con texto «TUFF MICKEY»",
+    "empaque": "Nuevo sellado en blíster original",
+    "edicion": "Licencia Disney · Manufactured under license by Innovative Time Corporation (Carlsbad, CA)",
+    "anio": "c. años 90",
+    "epoca": "Años 90",
+    "y": 1996,
+    "ep": "Años 90",
+    "pais": "China",
+    "fabricacion": "Made in China (código 961 en el blíster; compatible con circa años 90)",
+    "genero": "Infantil / coleccionable Disney",
+    "estado": {
+      "escala": "Nuevo sellado",
+      "nota": 10,
+      "detalle": "Tres unidades iguales, cada una nueva y sellada en su blíster original. En las fotos del ejemplar se leen MICKEY SPORT WATCH by Innovative Time Corporation, línea Mickey's Stuff, funciones de hora y calendario, pila incluida (el blíster escribe «BATTERY INCLUDEED»), garantía de 1 año (ya vencida por la época), © Disney, modelo DISLC09 y UPC 0 23133 04518 2. No se abrió el blister."
+    },
+    "rareza": "Poco común (NOS en blíster)",
+    "stock": 3,
+    "dolar": "992,48 CLP (13-11-2026)",
+    "fecha": "2026-11-13",
+    "valor_internacional_usd": "US$13,99 – US$32,00 (anuncios de modelos similares, no ventas cerradas del DISLC09)",
+    "valor_internacional_clp": "$13.885 – $31.759",
+    "venta_chile_clp": "$15.000 – $25.000",
+    "precio_sugerido_clp": "$19.990",
+    "pmin": 15000,
+    "pmax": 25000,
+    "p_sugerido": 19990,
+    "origen_estimacion": "Estimación (sin ventas cerradas del modelo exacto; anuncios Chile no equivalentes + anuncios internacionales de modelos similares)",
+    "descripcion": "Reloj digital Mickey Sport Watch de Innovative Time Corporation, línea Mickey's Stuff (Disney), modelo DISLC09, UPC 0 23133 04518 2. Quartz con pantalla LCD de hora y calendario, correa negra «TUFF MICKEY», fabricado en China circa años 90. Nuevo sellado en blíster original. Stock: 3 unidades iguales. Precio por unidad.",
+    "notas": "No se encontraron ventas realizadas verificables en Chile (MercadoLibre Chile vendidos, Yapo o Facebook Marketplace) ni ventas internacionales cerradas del modelo exacto DISLC09 / UPC 023133045182. La tasación es una estimación por unidad, apoyada en anuncios (no ventas) de relojes Disney infantiles en Chile que no son este modelo, y en anuncios activos de relojes Innovative Time Mickey de la misma época en eBay (modelos cercanos, no el DISLC09 confirmado). El dólar de trabajo es $992,48 CLP. El precio sugerido de $19.990 CLP queda entre el anuncio internacional de un Innovative Time Mickey nuevo en caja (US$13,99 ≈ $13.885 CLP) y el tramo alto de pedidos chilenos de relojes Disney infantiles nuevos (alrededor de $18.000–$25.000), con una prima moderada por estar nuevo sellado en blíster original. El listado eBay de un «Sport Watch» Innovative Time DISLC02 a US$32 (≈ $31.759 CLP) se cita solo como techo de anuncio; al verificar la ficha en ebay.co.uk respondió 404, así que puede estar vencido.",
+    "referencias": [
+      {
+        "tipo": "Venta Chile",
+        "fuente": "MercadoLibre Chile / Yapo / Facebook Marketplace",
+        "url": "",
+        "precio_clp": "—",
+        "nota": "Sin ventas realizadas verificables del DISLC09 ni de un Mickey Sport Watch Innovative Time en Chile."
+      },
+      {
+        "tipo": "Anuncio Chile (no equivalente)",
+        "fuente": "Yapo · Reloj Digital Minnie Disney (Iquique, 02-08-2023)",
+        "url": "https://public-api.yapo.cl/anuncios-casificados-musica-moda-arte-moda/reloj-digital-minnie-disney/27057407",
+        "precio_clp": "25.000",
+        "nota": "Anuncio (no venta cerrada). Reloj digital Minnie Disney nuevo, original e importado de EE. UU.; no es el modelo DISLC09 ni Mickey Sport Watch."
+      },
+      {
+        "tipo": "Anuncio Chile (no equivalente)",
+        "fuente": "Yapo · Reloj Disney nuevo (Antofagasta, 23-05-2023)",
+        "url": "https://public-api.yapo.cl/anuncios-casificados-muebles-hogar-y-jardin-general/reloj-disney-nuevo/27137479",
+        "precio_clp": "12.000",
+        "nota": "Anuncio (no venta cerrada). Solo dice «Reloj Disney original, hermoso nuevo»; el modelo no está especificado."
+      },
+      {
+        "tipo": "Anuncio Chile (no equivalente)",
+        "fuente": "AFROSTORE Chile · Reloj infantil de Mickey Mouse",
+        "url": "https://afrostorechile.com/products/reloj-infantil-de-mickey-mouse-1",
+        "precio_clp": "12.990 (oferta; $17.990 tachado)",
+        "nota": "Anuncio activo de un reloj infantil Mickey moderno genérico (marca NoEnName_Null, análogo de cuarzo), no es un Innovative Time vintage ni el DISLC09."
+      },
+      {
+        "tipo": "Anuncio internacional",
+        "fuente": "eBay · Disney Mickey Mouse Watch For Kids – Innovative Time (New In Box)",
+        "url": "https://www.ebay.com/itm/396094550236",
+        "precio_usd": "13,99 (or Best Offer)",
+        "precio_clp": "13.885",
+        "nota": "Anuncio activo (no venta cerrada). Innovative Time Mickey para niños, nuevo en caja; no se confirma que sea el DISLC09. Última actualización indexada: 28-04-2025."
+      },
+      {
+        "tipo": "Anuncio internacional (otro modelo, usado)",
+        "fuente": "eBay · Disney Calculator Mickey Mouse Math Teacher, DISLC29",
+        "url": "https://www.ebay.com/itm/286175251935",
+        "precio_usd": "10,99 (or Best Offer)",
+        "precio_clp": "10.907",
+        "nota": "Anuncio (no venta cerrada). Misma marca y línea de códigos DISLC, pero es el modelo calculadora DISLC29 y está usado, sin empaque original."
+      },
+      {
+        "tipo": "Anuncio internacional (posible vencido)",
+        "fuente": "eBay UK · Vintage Mickey Mouse Logo Sport Watch Kids Innovative Time (MPN DISLC02)",
+        "url": "https://www.ebay.co.uk/itm/225525315465",
+        "precio_usd": "32,00",
+        "precio_clp": "31.759",
+        "nota": "Anuncio indexado como New, modelo Sport DISLC02 (no DISLC09). Última actualización indexada: 12-07-2023. Al consultar la ficha devolvó 404; se usa solo como techo histórico de pedido, no como anuncio vigente."
+      }
+    ],
+    "imgs": [
+      "img/REL-001.jpg",
+      "img/REL-001-2.jpg"
+    ]
+  }
+]
