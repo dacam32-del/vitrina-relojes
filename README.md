@@ -11,7 +11,7 @@ Cada ficha incluye marca, línea o licencia, modelo, UPC, movimiento, display, c
 - Botón de consulta por WhatsApp.
 - Música de fondo: "Lobby Time" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0.
 
-**Totales:** 1 Ficha · 3 Unidades · $15.000 – $25.000 por unidad (sugerido $19.990 CLP) · Valor total Chile: $45.000 – $75.000
+**Totales:** 2 Fichas · 4 Unidades · REL-001 $15.000 – $25.000 c/u (sugerido $19.990) · REL-002 $35.000 – $60.000 (sugerido $44.990) · Valor total Chile: $80.000 – $135.000
 
 ## 🛒 Tienda web
 **[https://dacam32-del.github.io/vitrina-relojes/](https://dacam32-del.github.io/vitrina-relojes/)**
